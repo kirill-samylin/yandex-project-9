@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проектная работа 9</title>
+  <meta name="description" content="Проектная работа 9 Самылина Кирилла">
+  <meta name="keywords" content="Проектная работа 9, Самылин Кирилл, Яндекс Практикум">
+  <meta name="author" content="Самылин Кирилл">
+<link href="main.css" rel="stylesheet"></head>
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <img class="logo header__logo" src="./images/logo.svg" alt="Логотип">
+    </header>
+    <main class="main">
+      <section class="profiles">
+        <div class="profile">
+          <div class="profile__info">
+            <div class="profile__avatar">
+              <img class="profile__face" src="./images/1.png" alt="Автор">
+              <img class="profile__pencil" src="./images/pencil.svg" alt="Карандашь">
+            </div>
+            <div class="profile__description">
+              <div class="profile__name">
+                <h2 class="profile__author" data-id="">Жак-Ив Кусто</h2>
+                <p class="profile__activity">Исследователь океана</p>
+              </div>
+              <button class="profile__button-edit" type="button"></button>
+            </div>
+            <button class="profile__button-add" type="button"></button>
+          </div>
+          <ul class="profile__photos">
+            <!-- Контейнер для добавления фото -->
+          </ul>
+        </div>
+      </section>
+      <div id="form_author" class="popup">
+        <form class="popup__container" method="post" action="#">
+          <button class="button-close popup__button-close" type="button"></button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <input class="popup__input popup__author" id="input-author" type="text" value="Жак-Ив Кусто" pattern="[A-Za-zА-Яа-яЁё -]{2,40}" required>
+          <span class="popup__span-error" id="input-author-error"></span>
+          <input class="popup__input popup__activity" id="input-activity" type="text" value="Исследователь океана" minlength="2" maxlength="200" required>
+          <span class="popup__span-error" id="input-activity-error"></span>
+          <button class="popup__button-add" type="submit">Сохранить</button>
+        </form>
+      </div>
+      <div id="form_photo-add" class="popup">
+        <form class="popup__container" method="post" action="#">
+          <button class="button-close popup__button-close" type="button"></button>
+          <h2 class="popup__title">Новое место</h2>
+          <input class="popup__input popup__name" id="title-input" type="text" placeholder="Название" minlength="1" maxlength="30" required>
+          <span class="popup__span-error" id="title-input-error">Вы пропустили это поле.</span>
+          <input class="popup__input popup__link" id="ulr-input" type="url" placeholder="Ссылка на картинку" required>
+          <span class="popup__span-error" id="ulr-input-error">Введите адрес сайта.</span>
+          <button class="popup__button-add popup__button-add_disabled" type="submit" disabled>Создать</button>
+        </form>
+      </div>
+      <div id="form_avatar" class="popup">
+        <form class="popup__container" method="post" action="#">
+          <button class="button-close popup__button-close" type="button"></button>
+          <h2 class="popup__title">Обновить аватар</h2>
+          <input class="popup__input popup__avatar" id="ulr-avatar" type="url" placeholder="Ссылка на картинку" required>
+          <span class="popup__span-error" id="ulr-avatar-error">Введите адрес сайта.</span>
+          <button class="popup__button-add" type="submit">Сохранить</button>
+        </form>
+      </div>
+      <div id="form_confirmation" class="popup">
+        <form class="popup__container" method="post" action="#">
+          <button class="button-close popup__button-close" type="button"></button>
+          <h2 class="popup__title">Вы уверены?</h2>
+          <button class="popup__button-add" type="submit">Да</button>
+        </form>
+      </div>
+      <div id="form_photo-open" class="popup">
+        <div class="popup__photo">
+          <button class="button-close popup__button-close" type="button"></button>
+          <img class="popup__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg" alt="">
+          <p class="popup__paragraph">Челябинская область</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2020 Самылин Кирилл</p>
+    </footer>
+  </div>
+  <template id="profile-template">
+    <li class="profile__photo">
+      <button class="button-delete profile__button-delete" type="button"></button>
+      <img class="profile__photo-img">
+      <div class="profile__photo-name">
+        <h2 class="profile__photo-title"></h2>
+        <div class="profile__like">
+          <button class="button-like" type="button"></button>
+          <span class="profile__span-like"></span>
+        </div>
+      </div>
+    </li>
+  </template>
+  <div class="msg">
+    <span class="msg__span"></span>
+  </div>
+<script src="main.js"></script></body>
+</html>
