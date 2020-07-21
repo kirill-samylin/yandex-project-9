@@ -1,0 +1,11 @@
+@import url(./__author/footer__author.css);
+.footer {
+  padding-top: 51px;
+  padding-bottom: 65px;
+ }
+ @media screen and (max-width: 375px) {
+  .footer {
+    padding-top: 34px;
+    padding-bottom: 36px;
+  }
+}

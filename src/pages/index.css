@@ -1,0 +1,24 @@
+@import url(../vendor/normalize.css);
+@import url(../fonts/inter.css);
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/profiles/profiles.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/button-like/button-like.css);
+@import url(../blocks/button-close/button-close.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/button-delete/button-delete.css);
+@import url(../blocks/button-like/_active/button-like_active.css); /* если делать по БЭМ то не работает т.к. неперезаписывает */
+@import url(../blocks/popup/_opened/popup_opened.css); /* если делать по БЭМ то не работает т.к. неперезаписывает */
+@import url(../blocks/popup/__span-error/_active/popup__span-error_active.css); /* если делать по БЭМ то не работает т.к. неперезаписывает */
+@import url(../blocks/popup/__button-add/_disabled/popup__button-add_disabled.css); /* если делать по БЭМ то не работает т.к. неперезаписывает */
+@import url(../blocks/msg/msg.css);
+@import url(../blocks/msg/_error/msg_error.css);/* если делать по БЭМ то не работает т.к. неперезаписывает */
+@import url(../blocks/msg/_then/msg_then.css);/* если делать по БЭМ то не работает т.к. неперезаписывает */
+.pp {
+  background-image: url();
+  opacity: ;
+}

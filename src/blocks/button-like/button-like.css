@@ -1,0 +1,15 @@
+.button-like {
+  background-image: url(../../img/like.svg);
+  background-repeat: no-repeat;
+  background-color: initial;
+  width: 21px;
+  height: 18px;
+  border: none;
+}
+.button-like:focus {
+  outline: none;
+}
+.button-like:hover {
+  cursor: pointer;
+  opacity: .6;
+}
